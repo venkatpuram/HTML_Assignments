@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration form</title>
+    <style>
+    label
+    {
+        font-size:28px;
+        color: rgb(242, 111, 107);
+    }
+    .one
+    {
+        font-size: 25px;
+    }
+    body
+    {
+        background-image: url("one.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    </style>
+</head>
+<body>
+    <h1 align="center">Registration Form</h1>
+    <form>
+        <table align="center">
+            <tr>
+                    <td><label>First Name:</label></td>
+                    <td><input type="text" name="fname" value="" required autofocus></td>
+            </tr>
+            <tr>
+                    <td><label>Last Name:</label></td>
+                    <td><input type="text" name="lname" value="" required></td>
+            </tr>
+            <tr>
+                    <td><label>Address:</label></td>
+                    <td><textarea rows="5" cols="20" name="address" value="" required></textarea></td>
+            </tr>
+            <tr>
+                    <td><label>Email id:</label></td>
+                    <td><input type="email" name="email" value="" required></td>
+            </tr>
+            <tr>
+                    <td><label>City:</label></td>
+                    <td>
+                        <select>
+                            <option value="select">Select</option>
+                            <option value="mumbai">Mumbai</option>
+                            <option value="hyderabad">Hyderabad</option>
+                            <option value="bengaluru">Bengaluru</option>   
+                            <option value="chennai">Chennai</option>
+                            <option value="vijayawada">Vijayawada</option>
+                        </select>
+                    </td>
+            </tr>
+            <tr>
+                    <td><label>State:</label></td>
+                    <td>
+                        <select>
+                            <option value="select">Select</option>
+                            <option value="maharastra">Maharastra</option>
+                            <option value="telangana">Telangana</option>
+                            <option value="karnataka">Karnataka</option>   
+                            <option value="tamilnadu">Tamilnadu</option>
+                            <option value="andhrapradesh">Andhra pradesh</option>
+                        </select>
+                    </td>  
+            </tr>
+            <tr>
+                    <td><label>University branch name:</label></td>
+                    <td><input type="text" name="ubname" value="" required></td>
+            </tr>
+            <tr>
+                    <td><label>Phone no:</label></td>
+                    <td><input type="tel" name="phone" value="" pattern="[0-9]{10}" required></td>
+            </tr>
+            <tr>
+                    <td><label>Enrolled Course:</label></td>
+                    <td>
+                        <select>
+                                <option value="select">Select</option>
+                                <option value="btech">B.tech</option>
+                                <option value="mtech">M.Tech</option>
+                                <option value="diploma">Diploma</option>
+                                <option value="biotech">BioTech</option>
+                        </select>
+                    </td>  
+            </tr>
+            <tr>
+                    <td><label>Date of Test:</label></td>
+                    <td><input type="date" name="dateoftest" value="" required></td>
+            </tr>
+            <tr>
+                    <td><label>Written Test Marks:</label></td>
+                    <td><input type="number" min="50" max="100" name="writtentest" value="" required></td>
+            </tr>
+            <tr>
+            <td align="center"><input class="one"type="submit" value="submit" name="submit" ></td>
+           </tr>
+        </table>
+    </form>
+</body>
+</html>
