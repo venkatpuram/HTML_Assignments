@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>WithDraw page</title>
+        <style>
+            img
+            {
+                float: left;
+            }
+            nav
+            {
+                float: none;
+                margin-top:55px;
+                padding: 17px;
+                background-color:  #587fce;
+                                
+            }
+            a
+            {
+                padding: 15px;
+                color:whitesmoke;
+                font-size: 20px;
+                text-decoration: none;
+            }
+            a:hover
+            {
+                color:black;
+            }
+            section
+            {
+                text-align: center;
+                background-image: url("home.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 1420px;
+                height: 520px;
+
+            }
+            footer
+            {
+                float: none;
+                position: absolute;
+                background-color: #587fce;
+                color: whitesmoke;
+                top: 697px;
+                width: 1420px;
+                font-size: 20px;
+                margin-top: 20px;
+
+            }
+            label
+            {
+                font-size: 25px;
+            }
+            body
+            {
+                background-color: azure;
+            }
+        </style>
+</head>
+<body>
+    <a href="homepage.html"><img src="bank.jpg" alt="bank of india"></a>
+    <h1 style="text-align: center;color:  #ff8000;"> BANK OF INDIA</h1>
+    <nav>
+            <a href="AddNewAccount.html" target="_self">AddNewAccount</a>
+            <a href="searchAccount.html" target="_self">SearchAccount</a>
+            <a href="viewaccount.html" target="_self">ViewAccount</a>
+            <a href="ViewAllCustomers.html" target="_self">Viewallcustomers</a>
+            <a href="UpdateCustomerForm.html" target="_self">Updatecustomerform</a>
+            <a href="WithdrawForm.html" target="_self">Withdrawform</a>
+            <a href="Depositform.html" target="_self">Depositform</a>
+            <a href="Fundtransfer.html" target="_self">Fundtransfer</a>
+            <a href="Login.html" target="_self">Login</a>
+    </nav>
+    <section>
+        
+        <h1 align="center">WithDraw Form</h1>
+        <form>
+            <table align="center">
+                <tr>
+                        <td><label>Account Number:</label></td>
+                        <td><input type="text" placeholder="Enter account number" name="Actno" value="" required autofocus></td>
+                </tr>
+                
+                <tr>
+                        <td><label>Amount Withdraw:</label></td>
+                        <td><input type="number" placeholder="Enter amount to Withdraw" name="amtwithdraw" value="" required></td>
+                </tr>
+                        
+                <tr>
+                        
+                    <td align="right"><input class="one"type="submit" value="Withdraw" name="submit" ></td>
+                    
+                </tr>
+            </table>
+        </form>
+    </section>
+    <footer>
+        <img src="foot.jpg" width="200px" height="70px">
+        <p>© 2018 Bank of India. All rights reserved</p>
+    </footer>
+    
+
+</body>
+</html>
